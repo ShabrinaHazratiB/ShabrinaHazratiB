@@ -1,0 +1,31 @@
+.features-section {
+    background-color: #FAEECD;
+    padding: 40px 20px;
+    margin-top: 200px;
+  }
+  .feature-box {
+    text-align: center;
+    padding: 15px;
+  }
+  .feature-box i {
+    font-size: 2rem;
+    color: #8B5F08;
+  }
+  .feature-box h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .naviarrows {
+    position: relative;
+  }
+  .naviarrows .butarrow {
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 18px; 
+    margin: 0 10px;
+  }
+  
+  .naviarrows .butarrow i {
+    font-size: 1.0rem;
+  }

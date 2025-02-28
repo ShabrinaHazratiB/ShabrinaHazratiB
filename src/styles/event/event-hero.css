@@ -1,0 +1,16 @@
+.hero {
+  position: relative;
+  height: 705px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: 15px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: medium;
+  z-index: 2;
+  margin-top: 380px;
+}

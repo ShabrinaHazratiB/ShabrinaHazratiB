@@ -1,0 +1,35 @@
+---
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../../styles/homepage/destinationeventslider.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import DestinationHero2 from "../../components/destinations/destinationhero2.astro";
+import Destinationpagelayout from "../../layouts/destinationpagelayout.astro";
+import Destinationasliindex from "../../components/destinations/destinationasliindex.astro";
+
+
+
+const identity = {
+  title: "Destination Page Layout 🚀",
+  date: "2025-02-18",
+  description: "Deskripsi singkat artikel ini",
+  tags: ["tutorial", "web development", "astro"],
+  permalink: "/[lang]/destinationpage"
+};
+
+
+export function getStaticPaths () {
+  return [
+  {params: {lang: 'id-ID'}},
+  // {params: {destination: 'kagungan-dalem-taman-sari'}},
+  {params: {lang: 'en-US'}},
+  ];
+}
+const {lang} = Astro.params;
+const {destination} = Astro.props;
+export const prerender = true
+
+---
+<Destinationpagelayout pageTitle={identity.title}>
+  <DestinationHero2/>
+  <Destinationasliindex/>
+</Destinationpagelayout>
